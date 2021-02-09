@@ -15,3 +15,10 @@ functions:
       - http:
           path: ping
           method: get
+  
+  postTest:
+    handler: handler.posttest
+    events:
+      - http:
+          path: event
+          method: post
