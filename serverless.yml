@@ -1,11 +1,13 @@
 service: serverless-hello-world-aws
 
-frameworkVersion: ">=1.1.0 <2.0.0"
+frameworkVersion: "2"
 
 provider:
   name: aws
   runtime: nodejs14.x
-
+  region: us-east-1
+  memorySize: 128
+  
 functions:
   currentTime:
     handler: handler.endpoint
